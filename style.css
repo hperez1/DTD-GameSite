@@ -39,6 +39,7 @@ main {
     border: 1px solid #ddd;
     margin-bottom: 1rem;
     padding: 1rem;
+    color: #eeea05; 
 }
 
 .post h2 {
@@ -55,4 +56,18 @@ main {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     color: #000; 
+}
+
+.comment img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
+.comment video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
 }

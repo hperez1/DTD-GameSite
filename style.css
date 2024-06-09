@@ -39,6 +39,7 @@ main {
     border: 1px solid #ddd;
     margin-bottom: 1rem;
     padding: 1rem;
+    color: #eeea05; 
 }
 
 .post h2 {

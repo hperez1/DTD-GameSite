@@ -30,6 +30,29 @@ header h1 {
     margin: 0;
 }
 
+nav {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.resource-button {
+    background-color: transparent;
+    color: #eeea05;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 2px solid #eeea05;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resource-button:hover {
+    background-color: #eeea05;
+    color: #5f016b;
+}
+
 main {
     padding: 1rem;
 }
@@ -58,6 +81,29 @@ main {
     color: #000; 
 }
 
-.resource-section{
+.resource-section {
     background-color: #5f016b;
+    padding: 1rem;
+}
+
+.resource-section a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.resource-section a:hover {
+    color: #ff0000;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header .logo {
+        left: 0.5rem;
+    }
+
+    nav {
+        right: 0.5rem;
+    }
 }

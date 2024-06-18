@@ -17,7 +17,7 @@ header {
 
 header .logo {
     position: absolute;
-    left: 1rem;
+    left: 5rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -32,7 +32,7 @@ header h1 {
 
 nav {
     position: absolute;
-    right: 1rem;
+    right: 5rem;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -81,20 +81,37 @@ main {
     color: #000; 
 }
 
+.comment img, .comment video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+}
+
 .resource-section {
     background-color: #5f016b;
     padding: 1rem;
+    color: #eeea05;
+}
+
+.resource-section .resource {
+    background: #5f016b;
+    border: 1px solid #eeea05;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #eeea05;
 }
 
 .resource-section a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .resource-section a:hover {
-    color: #ff0000;
+    color: #ff0000; 
 }
 
 /* Media query for smaller screens */

@@ -124,3 +124,25 @@ main {
         right: 0.5rem;
     }
 }
+
+/* Styles for the toggle button */
+.toggle-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eeea05;
+    
+    border: none;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: red;
+}
+
+/* Hide comments initially */
+.comments {
+    display: none;
+}

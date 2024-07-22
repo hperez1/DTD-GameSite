@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Forum</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="https://members.deletethedivide.org/assets/images/DTDLogo_GoldPMS_HORIZ.png" alt="DTD Game Logo">
+            <img src="data:image/png;base64,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" alt="DTD Game Logo">
         </div>
         <h1>Game Devs First</h1>
         <nav>
@@ -19,38 +21,21 @@
 
     <main>
         <div class="post">
-            <h2>Figuring out where everything is!</h2>
-            <p>Here we will learn what all the different panels do in unity</p>
-            <div class="comments">
-                <div class="comment">
-                    <h3>When first opening Unity</h3>
-                    <img src="images/Tutorial1.png" alt="Description of the image">
-                    <p>In step one, we're going to become familiar  with the default Unity user interface. And as we explore the different panels,  we'll make the bird appear on screen.</p>
-                    <br>
-                    <h3>Default images we will use</h3>
-                    <p>We will be using these images for now so we can visualize what we are doing. We can change the images later or at any time.</p>
-                    <img src="images/Tutorial2.png" alt="Description of the image">
-
-
-                </div>
-            </div>
-        </div>
-        <div class="post">
             <h2>Step 1</h2>
             <p>Introduction for the game</p>
+            <button class="toggle-button">Toggle</button>
             <div class="comments">
                 <h3>Instructions for step 1</h3>
                 <div class="comment">
-                    <h3>Instructions for step 1</h3>
-                    <img src="images/Tutorial2.png" alt="Description of the image">
-
-                    
+                    <p>This "class" is scheduled to help you learn basic steps in getting into the game design world.</p>
+                    <img src="" alt="Pic">
                 </div>
             </div>
         </div>
         <div class="post">
             <h2>Step 2</h2>
             <p>Implementing a jump.</p>
+            <button class="toggle-button">Toggle</button>
             <div class="comments">
                 <h3>Step 2: how to make the character jump</h3>
                 <div class="comment">
@@ -65,6 +50,7 @@
         <div class="post">
             <h2>Step 3</h2>
             <p>The run.</p>
+            <button class="toggle-button">Toggle</button>
             <div class="comments">
                 <h3>Step 3: why are you running?</h3>
                 <div class="comment">
@@ -73,7 +59,18 @@
                 </div>
             </div>
         </div>
-    </main>
 
+        <div class="post">
+            <h2>Step 4</h2>
+            <p>Completion?</p>
+            <button class="toggle-button">Toggle</button>
+            <div class="comments">
+                <h3>Step 4: Finished?</h3>
+                <div class="comment">
+                    <p>Filler </p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
